@@ -1,15 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import  logo from './images/1620.png'
 import { Menu }  from './components/NavBar';
-
+import { ItemListContainer } from './components/ItemListContainer';
 
 function App() {
-  return (
-    
-    <>
+  return ( 
+   <>
     <Menu/>
-    </>
+    <ItemListContainer/>
+   </> 
+ 
+    
   );
 }
 
