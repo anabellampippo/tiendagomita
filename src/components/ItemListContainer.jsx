@@ -1,9 +1,12 @@
 import React, { useDebugValue } from 'react' 
+import  Counter  from './Counter';
 
-export const ItemListContainer = ({greeting}) => {
-  console.log (greeting)
+
+export const ItemListContainer = () => {
 return (
-    <h1>La Gomiteria</h1>
+<div>
+ <Counter stock={20}/>
+</div>
 
   ) 
 }
