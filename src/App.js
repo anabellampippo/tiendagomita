@@ -7,7 +7,7 @@ function App() {
   return ( 
    <>
     <Menu/>
-    <ItemListContainer/>
+    <ItemListContainer greeting="Hola"/>
    </> 
  
     
