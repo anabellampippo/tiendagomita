@@ -1,8 +1,8 @@
 import {useState} from 'react'
 
 
-const Counter = ({stock}) => {
-    const [count, setCount] = useState (0)
+const Counter = ({stock, onAdd}) => {
+    const [count, setCount] = useState (1)
 
 function add () {
     if (count < 20){
@@ -10,7 +10,7 @@ function add () {
 }
 
 function substract () {
-    if (count > 1){
+    if (count > 0){
     setCount (count - 1)}
 }
 
@@ -29,6 +29,10 @@ function reset () {
     <button className="btn" onClick={substract}>-</button>
         <button className="btn"  onClick={reset}> Reset</button>
         <button className="btn"  onClick={add}>+</button>
+    </div>
+    <div>
+    <button className="btn"  onClick={() => onAdd (count)}>Agregar</button>
+ 
     </div>
 </div>
     </div>
