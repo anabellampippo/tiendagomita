@@ -26,7 +26,7 @@ useEffect(() => {
 return (
 <div>
  <Counter stock={20} onAdd={onAdd}/>
- <Productos lista={Productos}/>
+ <productos lista={Productos}/>
 </div>
   ) 
 }
